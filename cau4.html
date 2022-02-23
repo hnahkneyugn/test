@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhap vao so a</p>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <button onclick="TinhChuVi()">Tính chu vi</button>
+    <p id="data1"></p>
+    <hr>
+    <p>Nhap vao so a</p>
+    <input type="number" id="x">
+    <br>
+    <p>Nhap vao so b</p>
+    <input type="number" id="y">
+    <br>
+    <br>
+    <button onclick="Tinha2()">Tính a binh phuong</button>
+    <button onclick="Tinhb2()">Tính b binh phuong</button>
+    <p id="data2"></p>
+    <p id="data3"></p>
+    <hr>
+    <p>Nhap vao so a</p>
+    <input type="number" id="m">
+    <br>
+    <p>Nhap vao so b</p>
+    <input type="number" id="n">
+    <br>
+    <br>
+    <button onclick="Tinhtonga-b()">Tính tong cac so tu a den b</button>
+    <p id="data4"></p>
+      <script>
+        function TinhChuVi(){
+            let a = +document.getElementById('a').value;
+            document.getElementById('data1').innerHTML = "Chu vi hinh vuong la: "+(a*4);
+        }
+        function Tinha2(){
+            let x = +document.getElementById('x').value;
+            document.getElementById('data2').innerHTML = "Binh phuong cua a la: "+(x*x);
+        }
+        function Tinhb2(){
+            let y = +document.getElementById('y').value;
+            document.getElementById('data3').innerHTML = "Binh phuong cua b la: "+(y*y);
+        }
+        function Tinhtonga-b(){
+            let m = +document.getElementById('m').value;
+            let n = +document.getElementById('n').value;
+            let d = m - n;
+            let d1 = n-m
+            let t = m + n;
+            let r1 = d%2;
+            let r2 = d1%2
+            let r3 = m/n
+            if d>0
+                if r1 =1
+                document.getElementById('data4').innerHTML = "Tong tu a den b la: "+(y*y);
+        }
+    </script>
+</body>
+</html>

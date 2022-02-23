@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p>Nhap vao so a</p>
+        <input type="number" id="a">
+        <br>
+        <p>Nhap vao so b</p>
+        <input type="number" id="b">
+        <br>
+        <button onclick="tinh()">Tính S</button>
+        <h1 id="data"></h1>
+        <script>
+            function tinh(){
+                let a = +document.getElementById('a').value;
+                let b = +document.getElementById('b').value;
+                document.getElementById('data').innerHTML = "S = a * b = "+(a*b);
+            }
+        </script>
+</body>
+</html>
